@@ -1,5 +1,5 @@
 name: SoundMuffler
-description: Muffles nearby sound
+description: 黏液科技附加 靜音羊毛 繁體翻譯版.
 version: ${project.version}
 api-version: 1.14
 depend: [Slimefun, ProtocolLib]

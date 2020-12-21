@@ -27,13 +27,13 @@ public class SoundMufflerMachine extends SlimefunItem implements EnergyNetCompon
 
     public static final int DISTANCE = 8;
     private static final int[] border = {1, 2, 3, 4, 5, 6, 7};
-    private static final String name = "&3Sound Muffler";
+    private static final String name = "&3靜音羊毛";
     private static final String id = "SOUND_MUFFLER";
 
     public SoundMufflerMachine() {
         super(SoundMuffler.SOUND_MUFFLER,
             new SlimefunItemStack(id, Material.WHITE_CONCRETE, name,
-                "", "&7Muffles all sound in a", "&78 block radius", "", "&e\u26A1 Requires power to use"
+                "", "&7靜音所有的聲音", "&7在8格範圍內", "", "&e\u26A1 需要使用電力!"
             ),
             id,
             RecipeType.ENHANCED_CRAFTING_TABLE,
@@ -67,13 +67,13 @@ public class SoundMufflerMachine extends SlimefunItem implements EnergyNetCompon
                 }
 
                 menu.replaceExistingItem(8, new CustomItem((enabled ? Material.REDSTONE : Material.GUNPOWDER),
-                    "&7Enabled: " + (enabled ? "&a\u2714" : "&4\u2718"), "", "&e> Click to enable this Machine"));
+                    "&7啟動: " + (enabled ? "&a\u2714" : "&4\u2718"), "", "&e> 點擊啟用此機器"));
                 menu.replaceExistingItem(0, new CustomItem(Material.PAPER,
-                    "&eVolume: &b" + volume,
-                    "&7Valid value range: 0-100",
-                    "&7L-click: -10",
-                    "&7R-click: +10",
-                    "&7With shift held: +/-1"));
+                    "&e音量: &b" + volume,
+                    "&7有效範圍: 0-100",
+                    "&7左鍵: -10",
+                    "&7右鍵: +10",
+                    "&7當按著Shift: +/-1"));
 
                 final int finalVolume = volume;
                 menu.addMenuClickHandler(0, (p, arg1, arg2, arg3) -> {

@@ -4,8 +4,8 @@ import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.core.researching.Research;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
-import me.mrCookieSlime.Slimefun.cscorelib2.updater.GitHubBuildsUpdater;
-import org.bstats.bukkit.Metrics;
+//import me.mrCookieSlime.Slimefun.cscorelib2.updater.GitHubBuildsUpdater;
+//import org.bstats.bukkit.Metrics;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -18,17 +18,17 @@ public class SoundMuffler extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-        if (!new File(getDataFolder(), "config.yml").exists())
-            saveDefaultConfig();
+        /*if (!new File(getDataFolder(), "config.yml").exists())
+            saveDefaultConfig();*/
 
-        new Metrics(this, 7415);
+        //new Metrics(this, 7415);
 
-        if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
+        /*if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
             new GitHubBuildsUpdater(this, getFile(), "J3fftw1/SoundMuffler/master").start();
-        }
+        }*/
 
         SOUND_MUFFLER = new Category(new NamespacedKey(this, "sound_muffler"),
-            new CustomItem(Material.BEACON, "&7SoundMuffler", "", "&a> Click to open"));
+            new CustomItem(Material.BEACON, "&7靜音羊毛", "", "&a> 點擊開啟"));
 
         new SoundMufflerListener(this).start();
 
@@ -36,7 +36,7 @@ public class SoundMuffler extends JavaPlugin implements SlimefunAddon {
         soundMufflerMachine.register(this);
 
         new Research(new NamespacedKey(this, "sound_muffler"),
-                     6912, "Sound Muffler", 11)
+                     6912, "靜音羊毛", 11)
         .addItems(soundMufflerMachine.getItem())
         .register();
     }
@@ -49,6 +49,6 @@ public class SoundMuffler extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/J3fftw1/SoundMuffler/issues";
+        return "https://github.com/xMikux/SoundMuffler/issues";
     }
 }
