@@ -5,3 +5,4 @@ rules:
     mergeMethod: merge
     conflictReviewers:
       - xMikux
+      - weiii-joe
