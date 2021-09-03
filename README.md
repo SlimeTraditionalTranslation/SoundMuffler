@@ -9,11 +9,11 @@
 [原專案連結](https://github.com/Slimefun-Addon-Community/SoundMuffler)
 
 ## 下載靜音羊毛
-繁體翻譯版: [構建頁面](https://xmikux.github.io/builds/xMikux/SoundMuffler/master/)<br>
+繁體翻譯版: [構建頁面](https://xmikux.github.io/builds/SlimeTraditionalTranslation/SoundMuffler/master/)<br>
 官方開發版: [開發版構建頁面](https://thebusybiscuit.github.io/builds/J3fftw1/SoundMuffler/master/)
 <p align="center">
-  <a href="https://xmikux.github.io/builds/xMikux/SoundMuffler/master/">
-    <img src="https://xmikux.github.io/builds/xMikux/SoundMuffler/master/badge.svg" alt="構建伺服器"/>
+  <a href="https://xmikux.github.io/builds/SlimeTraditionalTranslation/SoundMuffler/master/">
+    <img src="https://xmikux.github.io/builds/SlimeTraditionalTranslation/SoundMuffler/master/badge.svg" alt="構建伺服器"/>
   </a>
 </p>
 
