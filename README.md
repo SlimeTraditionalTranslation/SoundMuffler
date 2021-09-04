@@ -9,7 +9,6 @@
 > [原作連結](https://github.com/Slimefun-Addon-Community/SoundMuffler) | [非官方Discord](https://discord.gg/GF4CwjFXT9)
 
 ## 下載靜音羊毛
-
 | 非官方繁體中文版 | 官方英文版 |
 | -------- | -------- |
 | 點下方圖片下載 | 點下方圖片下載 |
